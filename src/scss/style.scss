@@ -1,0 +1,232 @@
+@use 'colors';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fonts*/
+@font-face {
+    font-family: lato;
+    src: url('../../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: catamaran;
+    src: url('../../fonts/Catamaran-Light.ttf');
+}
+
+@font-face {
+    font-family: mulish;
+    src: url('../../fonts/Mulish-Light.ttf');
+}
+
+
+/* Header */
+header {
+    background-image: url('../../img/bg-pattern.png'), linear-gradient(to right, colors.$gradient-left, colors.$gradient-right);
+    height: 120vh;
+}
+
+nav, h1{
+    font-family: catamaran, Arial, Helvetica, sans-serif;
+}
+
+.scroll{
+    position: fixed;
+    top:0;
+    background-color: colors.$hover-color;
+    display: none;
+}
+
+.stop {
+    height: 100vh;
+}
+
+@media only screen and (min-width:992px) {
+    header {
+        height: 90vh;
+    }
+
+    #features {
+        height: 100vh;
+    }
+
+    .stop {
+        height: 75vh;
+    }
+}
+
+.start {
+    color: colors.$background;
+
+    &:hover{
+        color: colors.$hover-color;
+    }
+}
+
+a {
+    color: colors.$menu-link;
+
+    &:hover{
+        color: colors.$hover-color;
+    }
+}
+
+.bg-white, .text-white{
+    background-color: colors.$hover-color;
+}
+
+.d-none{
+    display: none;
+}
+
+ul{
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.buttonOne {
+    border: 1px solid colors.$hover-color;
+    font-family: lato, Arial, Helvetica, sans-serif;
+    background-color: colors.$hover-color;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 99em;
+    
+    &:hover {
+        background-color: colors.$background;
+        border-color: colors.$background;
+        transition: all .3s;
+    }
+}
+
+.text-dark:hover,
+.text-dark:active {
+    color: colors.$background;
+}
+
+.phone {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    width: 16rem;
+}
+
+.demo {
+    position: absolute;
+    top: 3.4rem;
+    left: 16px;
+    z-index: 2;
+    width: 14.3rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .phone {
+
+        top: 0rem;
+        left: 5px;
+        width: 16rem;
+    }
+
+    .demo {
+        top: 3.65rem;
+        left: 1.3rem;
+    }
+}
+
+/* Download */
+
+section{
+    text-align: center;
+    padding: 2rem;
+}
+
+#download,
+#contact {
+    background-color: colors.$background;
+    ;
+}
+
+.gplay,
+.store {
+    width: 12rem;
+}
+
+p {
+    font-family: mulish, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Feature */
+i {
+    color: colors.$icon-color;
+    opacity: 0.9;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.place {
+    height: 40rem;
+}
+
+hr {
+    width: 15%;
+}
+
+@media only screen and (min-width: 992px) {
+    hr {
+        width: 7%;
+    }
+}
+
+/* Stop */
+.stop {
+    background-image: url('../../img/bg-cta.jpg');
+    background-position: center;
+    filter: brightness(50%);
+}
+
+/* Contact */
+.fa-heart {
+    color: colors.$heart;
+}
+
+.fa-facebook {
+    background-color: colors.$facebook;
+}
+
+.fa-twitter {
+    background-color: colors.$twitter;
+}
+
+.fa-google {
+    background-color: colors.$google;
+}
+
+/* Footer */
+
+footer,
+footer a {
+    background-color: colors.$footer-background;
+    color: colors.$footer-color;
+    font-family: mulish, Arial, Helvetica, sans-serif;
+}
+
+footer a:hover {
+    color: colors.$background;
+}

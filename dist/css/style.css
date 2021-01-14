@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fonts*/
+@font-face {
+  font-family: lato;
+  src: url("../../fonts/Lato-Light.ttf");
+}
+@font-face {
+  font-family: catamaran;
+  src: url("../../fonts/Catamaran-Light.ttf");
+}
+@font-face {
+  font-family: mulish;
+  src: url("../../fonts/Mulish-Light.ttf");
+}
+/* Header */
+header {
+  background-image: url("../../img/bg-pattern.png"), linear-gradient(to right, #dd2533, #7b4497);
+  height: 120vh;
+}
+
+nav, h1 {
+  font-family: catamaran, Arial, Helvetica, sans-serif;
+}
+
+.scroll {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  display: none;
+}
+
+.stop {
+  height: 100vh;
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    height: 90vh;
+  }
+
+  #features {
+    height: 100vh;
+  }
+
+  .stop {
+    height: 75vh;
+  }
+}
+.start {
+  color: #fdcc52;
+}
+.start:hover {
+  color: #ffffff;
+}
+
+a {
+  color: #d8d8d8;
+}
+a:hover {
+  color: #ffffff;
+}
+
+.bg-white, .text-white {
+  background-color: #ffffff;
+}
+
+.d-none {
+  display: none;
+}
+
+ul {
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.buttonOne {
+  border: 1px solid #ffffff;
+  font-family: lato, Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 99em;
+}
+.buttonOne:hover {
+  background-color: #fdcc52;
+  border-color: #fdcc52;
+  transition: all 0.3s;
+}
+
+.text-dark:hover,
+.text-dark:active {
+  color: #fdcc52;
+}
+
+.phone {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  width: 16rem;
+}
+
+.demo {
+  position: absolute;
+  top: 3.4rem;
+  left: 16px;
+  z-index: 2;
+  width: 14.3rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .phone {
+    top: 0rem;
+    left: 5px;
+    width: 16rem;
+  }
+
+  .demo {
+    top: 3.65rem;
+    left: 1.3rem;
+  }
+}
+/* Download */
+section {
+  text-align: center;
+  padding: 2rem;
+}
+
+#download,
+#contact {
+  background-color: #fdcc52;
+}
+
+.gplay,
+.store {
+  width: 12rem;
+}
+
+p {
+  font-family: mulish, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Feature */
+i {
+  color: #800080;
+  opacity: 0.9;
+}
+i:hover {
+  opacity: 1;
+}
+
+.place {
+  height: 40rem;
+}
+
+hr {
+  width: 15%;
+}
+
+@media only screen and (min-width: 992px) {
+  hr {
+    width: 7%;
+  }
+}
+/* Stop */
+.stop {
+  background-image: url("../../img/bg-cta.jpg");
+  background-position: center;
+  filter: brightness(50%);
+}
+
+/* Contact */
+.fa-heart {
+  color: #ff0000;
+}
+
+.fa-facebook {
+  background-color: #3b5999;
+}
+
+.fa-twitter {
+  background-color: #1da1f3;
+}
+
+.fa-google {
+  background-color: #dd4c39;
+}
+
+/* Footer */
+footer,
+footer a {
+  background-color: #000000;
+  color: #808080;
+  font-family: mulish, Arial, Helvetica, sans-serif;
+}
+
+footer a:hover {
+  color: #fdcc52;
+}
+
+/*# sourceMappingURL=style.css.map */

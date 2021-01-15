@@ -12,207 +12,159 @@
 <body>
     <div class="">
         <header class="">
-
-            <nav class="scroll">
-                <a class="" href="index.html">Start bootstrap</a>
+            <nav class="scroll d-none">
+                <a class="start" href="index.html">Start bootstrap</a>
                 
-                <div>
-                    <label for="menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    <input type="checkbox" id="menu">
-                    <ul>
-                        <li>
-                            <a href="#download">download</a>
+                <div class="nav__container">
+                    
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#download">download</a>
                         </li>
-                        <li>
-                            <a href="#features">features</a>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#features">features</a>
                         </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <nav class="scrollTop">
-                <a class="" href="index.html">Start bootstrap</a>
-                
-                <div>
-                    <label for="menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    <input type="checkbox" id="menu">
-                    <ul>
-                        <li>
-                            <a href="#download">download</a>
-                        </li>
-                        <li>
-                            <a href="#features">features</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#contact">contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
-            <nav class="scroll">
-                <a class="" href="#">Start bootstrap</a>
-                <button class="" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="" id="">
-                    <ul class="">
-                        <li class="nav-item active">
-                            <a class="nav-link text-dark" href="#download">download</a>
+            <nav class="nav scrollTop">
+                <a class="start" href="index.html">Start bootstrap</a>
+                
+                <div class="nav__container">
+                    <label for="menu" class="nav__hamburger-label">&#9776</label>
+                    <input type="checkbox" id="menu" class="nav__hamburger-checkbox">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#download">download</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#features">features</a>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#features">features</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#contact">contact</a>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#contact">contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-    </div>
-    <nav class="scrollTop">
-        <a class="start" href="#">Start bootstrap</a>
-        <button class="navbar-dark border-white" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="" id="navbarSupportedContent">
-            <ul class="text-secondary">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#download">download</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#features">features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="row my-5">
-        <div class="col-lg-4 offset-lg-2 my-5">
-            <h1 class="text-white text-center text-lg-left p-5">New Age is an app
-                landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-            <div class="col-sm-8 offset-sm-4 offset-lg-0">
-                <a class="buttonOne btn-lg ml-lg-5" href="">Start now for free!</a>
-            </div>
-        </div>
-        <div class="col-sm-8 offset-sm-4 col-lg-4 offset-lg-0 position-relative">
-            <img class="demo" src="../../img/demo-screen-1.jpg" alt="">
-            <img class="phone" src="../../img/phone.png" alt="">
-        </div>
-    </div>
-    </header>
-    <section id="download" class="text-center p-5">
-        <h1 class="pt-5 w-lg-50 mx-auto">Discover what all the buzz is about!</h1>
-        <div class="col-lg-4 offset-lg-2">
-            <small class="d-none d-lg-block">google-play-badge.svg</small>
-        </div>
-        <p>Our app is available on any mobile device! Download now to get started!</p>
-        <a href="play.google.com"><img class="gplay d-sm-block d-lg-inline my-5 mx-auto"
-                src="../../img/google-play-badge.svg" alt=""></a>
-        <a href="apple.com"><img class="store d-sm-block d-lg-inline my-5 mx-auto" src="../../img/app-store-badge.svg"
-                alt=""></a>
-    </section>
-    <section id="features" class="text-center p-5">
-        <h1 class="pt-5 w-lg-50 mx-auto">Unlimited Features, Unlimited Fun</h1>
-        <p>Check out what you can do with this app theme!</p>
-        <hr>
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-sm-8 offset-sm-4 col-lg-4 offset-lg-0 position-relative">
+
+            <div class="flex">
+                <div class="left">
+                    <h1 class="newAge">New Age is an app
+                        landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+                    <div class="">
+                        <a class="buttonOne btn-lg ml-lg-5" href="">Start now for free!</a>
+                    </div>
+                </div>
+                <div class="right images">                    
                     <img class="demo" src="../../img/demo-screen-1.jpg" alt="">
                     <img class="phone" src="../../img/phone.png" alt="">
-                    <div class="place"></div>
                 </div>
-                <div class="col-lg-4 mt-5">
-                    <div class="card h-50 border-0 mx-auto" style="width: 18rem;">
-                        <i class="fa fa-mobile fa-3x"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Device Mockups</h5>
-                            <p class="card-text">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+            </div>
+        </header>
+        <section id="download" class="">
+            <h1 class="">Discover what all the buzz is about!</h1>
+            <div class="">
+                <small class="googleplay">google-play-badge.svg</small>
+            </div>
+            <p>Our app is available on any mobile device! Download now to get started!</p>
+            <a href="play.google.com"><img class="gplay d-sm-block d-lg-inline my-5 mx-auto"
+                    src="../../img/google-play-badge.svg" alt=""></a>
+            <a href="apple.com"><img class="store d-sm-block d-lg-inline my-5 mx-auto"
+                    src="../../img/app-store-badge.svg" alt=""></a>
+        </section>
+        <section id="features" class="">
+            <h1 class="">Unlimited Features, Unlimited Fun</h1>
+            <p>Check out what you can do with this app theme!</p>
+            <hr>
+            <div class="">
+                <div class="flex">
+                    <div class="left images">
+                        <img class="demo" src="../../img/demo-screen-1.jpg" alt="">
+                        <img class="phone" src="../../img/phone.png" alt="">
+                        <div class="place"></div>
+                    </div>
+                    <div class="right">
+                        <div class="card">
+                            <i class="fa fa-mobile fa-3x"></i>
+                            <div class="">
+                                <h5 class="">Device Mockups</h5>
+                                <p class="">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <i class="fa fa-gift fa-3x"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Free to Use</h5>
+                                <p class="card-text">As always, this theme is free to download and use for any purpose!
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card h-50 border-0 mx-auto" style="width: 18rem;">
-                        <i class="fa fa-gift fa-3x"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Free to Use</h5>
-                            <p class="card-text">As always, this theme is free to download and use for any purpose!
-                            </p>
+                    <div class="">
+                        <div class="card">
+                            <i class="fa fa-camera fa-3x"></i>
+                            <div class="">
+                                <h5 class="">Flexible Use</h5>
+                                <p class="">Put an image, video, animation, or anything else in the screen!</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-5">
-                    <div class="card h-50 border-0 mx-auto" style="width: 18rem;">
-                        <i class="fa fa-camera fa-3x"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Flexible Use</h5>
-                            <p class="card-text">Put an image, video, animation, or anything else in the screen!</p>
-                        </div>
-                    </div>
-                    <div class="card h-50 border-0 mx-auto" style="width: 18rem;">
-                        <i class="fa fa-unlock-alt fa-3x"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Open Source</h5>
-                            <p class="card-text">Since this theme is MIT licensed, you can use it commercially!</p>
+                        <div class="card">
+                            <i class="fa fa-unlock-alt fa-3x"></i>
+                            <div class="">
+                                <h5 class="">Open Source</h5>
+                                <p class="">Since this theme is MIT licensed, you can use it commercially!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="stop p-5">
-        <div class="d-flex justify-content-center flex-column h-100">
-            <div class="col-sm-7 col-lg-4 offset-lg-2">
-                <h1 class="text-white">Stop waiting.</h1>
-                <h1 class="text-white h1 mb-4">Start building.</h1>
-                <div class="">
-                    <a class="buttonOne rounded-pill btn-lg text-white text-uppercase text-center" href="">Let's get
-                        started</a>
+        </section>
+        <section class="stop p-5">
+            <div class="flex-center">
+                <div class="col-sm-7 col-lg-4 offset-lg-2">
+                    <h1 class="text-white">Stop waiting.</h1>
+                    <h1 class="text-white h1 mb-4">Start building.</h1>
+                    <div class="">
+                        <a class="buttonOne rounded-pill btn-lg text-white text-uppercase text-center" href="">Let's get
+                            started</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="contact" class="text-center p-5">
-        <h1 class="m-3">We <i class="fa fa-heart" aria-hidden="true"></i> new friends!</h1>
-        <nav class="nav justify-content-center m-5">
-            <a href="https://twitter.com" class="text-white mr-2 rounded-circle" data-toggle="tooltip"
-                data-placement="top" title="Twitter">
-                <i class="fa fa-twitter fa-2x rounded-circle text-white p-3" aria-hidden="true"></i>
-                <span class="sr-only">Twitter oldal></span>
-            </a>
-            <a href="https://www.facebook.com/" class="text-white mr-2" data-toggle="tooltip" data-placement="top"
-                title="Facebook">
-                <i class="fa fa-facebook fa-2x rounded-circle text-white py-3 px-4" aria-hidden="true"></i>
-                <span class="sr-only">Facebook oldal></span>
-            </a>
-            <a href="https://www.google.com/" class="text-white rounded-circle" data-toggle="tooltip"
-                data-placement="top" title="Google">
-                <i class="fa fa-google fa-2x rounded-circle text-white p-3" aria-hidden="true"></i>
-                <span class="sr-only">Google oldal></span>
-            </a>
-        </nav>
-    </section>
-    <footer class="text-center p-5">
-        <div class="small">Your Website 2018. All Rights Reserved.</div>
-        <a href="" data-toggle="modal" data-target="#privacy">Privacy</a>
-        <a href="" data-toggle="modal" data-target="#terms">Terms</a>
-        <a href="" data-toggle="modal" data-target="#FAQ">FAQ</a>
-    </footer>
+        </section>
+        <section id="contact" class="social">
+            <h1 class="">We <span class="heart">&#10084</span> new friends!</h1>
+            <nav class="">
+                <a href="https://twitter.com" class="" data-toggle="tooltip"
+                    data-placement="top" title="Twitter">
+                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter oldal></span>
+                </a>
+                <a href="https://www.facebook.com/" class="text-white mr-2" data-toggle="tooltip" data-placement="top"
+                    title="Facebook">
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook oldal></span>
+                </a>
+                <a href="https://www.google.com/" class="" data-toggle="tooltip"
+                    data-placement="top" title="Google">
+                    <i class="fa fa-google fa-2x" aria-hidden="true"></i>
+                    <span class="sr-only">Google oldal></span>
+                </a>
+            </nav>
+        </section>
+        <footer class="text-center p-5">
+            <div class="small">Your Website 2018. All Rights Reserved.</div>
+            <a href="" data-toggle="modal" data-target="#privacy">Privacy</a>
+            <a href="" data-toggle="modal" data-target="#terms">Terms</a>
+            <a href="" data-toggle="modal" data-target="#FAQ">FAQ</a>
+        </footer>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="FAQ" tabindex="-1" aria-labelledby="faqLabel" aria-hidden="true">
+    <div class="modal fade d-none" id="FAQ" tabindex="-1" aria-labelledby="faqLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -231,7 +183,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="privacy" tabindex="-1" aria-labelledby="privacyLabel" aria-hidden="true">
+    <div class="modal fade d-none" id="privacy" tabindex="-1" aria-labelledby="privacyLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -251,7 +203,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="terms" tabindex="-1" aria-labelledby="termsLabel" aria-hidden="true">
+    <div class="modal fade d-none" id="terms" tabindex="-1" aria-labelledby="termsLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -270,8 +222,8 @@
         </div>
     </div>
 
-    <script src="js/scroll.js"></script>
-    <script src="js/tooltip.js"></script>
+    <script src="../../js/scroll.js"></script>
+    <script src="../../js/tooltip.js"></script>
 </body>
 
 </html>

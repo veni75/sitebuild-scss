@@ -1,0 +1,8 @@
+@mixin socialIcon($background,$padding){
+    background-color: $background;
+    border-radius: 99px;
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: $padding;
+    color: white;
+}

@@ -1,4 +1,5 @@
 @use 'colors';
+@use 'mixins';
 
 * {
     box-sizing: border-box;
@@ -31,15 +32,125 @@ header {
     height: 120vh;
 }
 
-nav, h1{
+h1 {
     font-family: catamaran, Arial, Helvetica, sans-serif;
 }
 
-.scroll{
-    position: fixed;
-    top:0;
-    background-color: colors.$hover-color;
+
+
+.nav {
+    display: flex;
+    font-family: catamaran, Arial, Helvetica, sans-serif;
+
+    &__container {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        @media screen and (min-width: 992px) {
+            width: 80%;
+        }
+    }
+
+    &__list {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        text-transform: uppercase;
+        width: 100%;
+
+        @media screen and (min-width: 992px) {
+            display: flex;
+            flex-direction: row;
+            margin-right: 1rem;
+            width: auto;
+        }
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__link {
+        color: colors.$menu-link;
+        display: block;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 1rem;
+        text-decoration: none;
+
+        &:hover {
+            color: colors.$hover-color;
+        }
+    }
+
+    &__hamburger {
+        &-checkbox {
+            display: block;
+            
+
+            &:checked+.nav__list {
+                display: flex;
+            }
+        }
+
+        &-label {
+            background-color: #fff;
+            border: 1px solid gray;
+            border-radius: 3px;
+            cursor: pointer;
+            display: block;
+
+
+
+            @media screen and (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.d-none {
     display: none;
+}
+
+.scroll {
+    position: fixed;
+    top: 0;
+    background-color: colors.$hover-color;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+    }
+}
+
+.left {
+    flex: 80%;
+
+    @media screen and (min-width: 992px) {
+        flex: 50%;
+    }
+}
+
+.right {
+    flex: 80%;
+
+    @media screen and (min-width: 992px) {
+        flex: 50%;
+    }
+}
+
+.images {
+    position: relative;
 }
 
 .stop {
@@ -62,82 +173,81 @@ nav, h1{
 
 .start {
     color: colors.$background;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: 15rem;
 
-    &:hover{
+    &:hover {
         color: colors.$hover-color;
+    }
+
+    @media only screen and (min-width: 992px) {
+        margin-left: 5rem;
+        padding: 1rem;
+        font-size: 1.3rem;
     }
 }
 
 a {
     color: colors.$menu-link;
 
-    &:hover{
+    &:hover {
         color: colors.$hover-color;
     }
 }
 
-.bg-white, .text-white{
-    background-color: colors.$hover-color;
-}
+.newAge {
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
 
-.d-none{
-    display: none;
-}
+    @media only screen and (min-width: 992px) {
 
-ul{
-    margin-left: auto;
-    text-transform: uppercase;
-}
-
-.text-uppercase{
-    text-transform: uppercase;
+        text-align: left;
+    }
 }
 
 .buttonOne {
     border: 1px solid colors.$hover-color;
     font-family: lato, Arial, Helvetica, sans-serif;
-    background-color: colors.$hover-color;
+    padding: 1rem;
+    // background-color: colors.$hover-color;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
     border-radius: 99em;
-    
+
     &:hover {
         background-color: colors.$background;
         border-color: colors.$background;
         transition: all .3s;
     }
-}
 
-.text-dark:hover,
-.text-dark:active {
-    color: colors.$background;
+    @media only screen and (min-width: 992px) {}
 }
 
 .phone {
     position: absolute;
-    top: 0rem;
-    left: 0;
+    top: 2rem;
+    left: 4rem;
     width: 16rem;
-}
 
-.demo {
-    position: absolute;
-    top: 3.4rem;
-    left: 16px;
-    z-index: 2;
-    width: 14.3rem;
-}
-
-@media only screen and (min-width: 992px) {
-    .phone {
-
+    @media only screen and (min-width: 992px) {
         top: 0rem;
         left: 5px;
         width: 16rem;
     }
+}
 
-    .demo {
+.demo {
+    position: absolute;
+    top: 5.4rem;
+    left: 5rem;
+    z-index: 2;
+    width: 14.3rem;
+
+    @media only screen and (min-width: 992px) {
         top: 3.65rem;
         left: 1.3rem;
     }
@@ -145,7 +255,7 @@ ul{
 
 /* Download */
 
-section{
+section {
     text-align: center;
     padding: 2rem;
 }
@@ -153,7 +263,16 @@ section{
 #download,
 #contact {
     background-color: colors.$background;
-    ;
+}
+
+.googleplay {
+    display: none;
+
+    @media only screen and (min-width: 992px) {
+        display: block;
+        text-align: left;
+        margin-left: 2rem;
+    }
 }
 
 .gplay,
@@ -166,11 +285,12 @@ p {
     font-size: 1.2rem;
 }
 
-.text-center{
-    text-align: center;
+/* Features */
+
+#features {
+    margin: 0 auto;
 }
 
-/* Feature */
 i {
     color: colors.$icon-color;
     opacity: 0.9;
@@ -186,12 +306,20 @@ i {
 
 hr {
     width: 15%;
-}
 
-@media only screen and (min-width: 992px) {
-    hr {
+    @media only screen and (min-width: 992px) {
         width: 7%;
     }
+}
+
+.card {
+    width: 18rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h5 {
+    font-size: 1.3rem;
 }
 
 /* Stop */
@@ -199,34 +327,55 @@ hr {
     background-image: url('../../img/bg-cta.jpg');
     background-position: center;
     filter: brightness(50%);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
 }
 
 /* Contact */
-.fa-heart {
-    color: colors.$heart;
+.social {
+    text-align: center;
+}
+
+.heart {
+    color: colors.$gradient-left;
 }
 
 .fa-facebook {
-    background-color: colors.$facebook;
+    @include mixins.socialIcon(colors.$facebook, 1rem 1.5rem);
 }
 
 .fa-twitter {
-    background-color: colors.$twitter;
+    @include mixins.socialIcon(colors.$twitter, 1rem);
 }
 
 .fa-google {
-    background-color: colors.$google;
+    @include mixins.socialIcon(colors.$google, 1rem);
 }
 
 /* Footer */
 
-footer,
-footer a {
+footer {
     background-color: colors.$footer-background;
     color: colors.$footer-color;
-    font-family: mulish, Arial, Helvetica, sans-serif;
-}
+    padding: 1rem;
+    font: 0.8rem/1.5 mulish, Arial, Helvetica, sans-serif;
+    text-align: center;
 
-footer a:hover {
-    color: colors.$background;
+    a {
+        color: colors.$footer-color;
+        padding: 0.5rem;
+        text-decoration: none;
+
+        &:hover {
+            color: colors.$background;
+        }
+    }
 }

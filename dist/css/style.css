@@ -9,19 +9,19 @@ html {
 /* Fonts*/
 @font-face {
   font-family: lato;
-  src: url("../../fonts/Lato-Light.ttf");
+  src: url("../fonts/Lato-Light.ttf");
 }
 @font-face {
   font-family: catamaran;
-  src: url("../../fonts/Catamaran-Light.ttf");
+  src: url("../fonts/Catamaran-Light.ttf");
 }
 @font-face {
   font-family: mulish;
-  src: url("../../fonts/Mulish-Light.ttf");
+  src: url("../fonts/Mulish-Light.ttf");
 }
 /* Header */
 header {
-  background-image: url("../../img/bg-pattern.png"), linear-gradient(to right, #dd2533, #7b4497);
+  background-image: url("../img/bg-pattern.png"), linear-gradient(to right, #dd2533, #7b4497);
   height: 120vh;
 }
 
@@ -136,21 +136,9 @@ h1 {
   position: relative;
 }
 
-.stop {
-  height: 100vh;
-}
-
 @media only screen and (min-width: 992px) {
   header {
     height: 90vh;
-  }
-
-  #features {
-    height: 100vh;
-  }
-
-  .stop {
-    height: 75vh;
   }
 }
 .start {
@@ -256,6 +244,14 @@ section {
 .gplay,
 .store {
   width: 12rem;
+  display: block;
+  margin: 1rem auto;
+}
+@media only screen and (min-width: 992px) {
+  .gplay,
+.store {
+    display: inline;
+  }
 }
 
 p {
@@ -266,6 +262,11 @@ p {
 /* Features */
 #features {
   margin: 0 auto;
+}
+@media only screen and (min-width: 992px) {
+  #features {
+    height: 100vh;
+  }
 }
 
 i {
@@ -290,6 +291,7 @@ hr {
 }
 
 .card {
+  height: 15rem;
   width: 18rem;
   text-align: center;
   margin: 0 auto;
@@ -301,11 +303,17 @@ h5 {
 
 /* Stop */
 .stop {
-  background-image: url("../../img/bg-cta.jpg");
+  background-image: url("../img/bg-cta.jpg");
   background-position: center;
   filter: brightness(50%);
   color: white;
   font-size: 1.5rem;
+  height: 100vh;
+}
+@media only screen and (min-width: 992px) {
+  .stop {
+    height: 75vh;
+  }
 }
 
 .flex-center {
@@ -367,6 +375,103 @@ footer a {
 }
 footer a:hover {
   color: #fdcc52;
+}
+
+/* MODAL */
+.modal {
+  background-color: white;
+  border: 1px solid gray;
+  display: none;
+  left: 0;
+  max-width: 100%;
+  padding: 2rem;
+  position: absolute;
+  top: 30%;
+  z-index: 10;
+}
+
+@media only screen and (min-width: 992px) {
+  .modal {
+    left: 25%;
+    max-width: 50%;
+  }
+}
+.iclose {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.modal__header {
+  padding: 0 2rem;
+}
+
+.modal__main {
+  padding: 0 2rem 3rem 2rem;
+}
+
+.footerModal {
+  bottom: 2rem;
+  position: absolute;
+  right: 2rem;
+}
+
+button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.modal__okey {
+  background-color: #56e456;
+  border: 1px solid #56e456;
+  color: #ffffff;
+}
+
+.modal__button {
+  z-index: 1;
+}
+
+/*OVERLAY*/
+.overlay {
+  background-color: #7a7979;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+/* ANIMATION */
+.animation {
+  animation: animated_div 1s ease;
+}
+
+@keyframes animated_div {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 30%;
+  }
+}
+.animation2 {
+  animation: animated_div2 1s ease;
+}
+
+@keyframes animated_div2 {
+  0% {
+    opacity: 1;
+    top: 30%;
+  }
+  100% {
+    opacity: 0;
+    top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

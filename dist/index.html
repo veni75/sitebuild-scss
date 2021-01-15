@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../../font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
     <title>Sitebuild</title>
 </head>
 
@@ -14,9 +15,9 @@
         <header class="">
             <nav class="scroll d-none">
                 <a class="start" href="index.html">Start bootstrap</a>
-                
+
                 <div class="nav__container">
-                    
+
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a class="nav__link" href="#download">download</a>
@@ -33,7 +34,7 @@
 
             <nav class="nav scrollTop">
                 <a class="start" href="index.html">Start bootstrap</a>
-                
+
                 <div class="nav__container">
                     <label for="menu" class="nav__hamburger-label">&#9776</label>
                     <input type="checkbox" id="menu" class="nav__hamburger-checkbox">
@@ -51,17 +52,17 @@
                 </div>
             </nav>
 
-            <div class="flex">
-                <div class="left">
+            <div class="container">
+                <div class="col--mobile-12 col--desktop-6">
                     <h1 class="newAge">New Age is an app
                         landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
                     <div class="">
                         <a class="buttonOne btn-lg ml-lg-5" href="">Start now for free!</a>
                     </div>
                 </div>
-                <div class="right images">                    
-                    <img class="demo" src="../../img/demo-screen-1.jpg" alt="">
-                    <img class="phone" src="../../img/phone.png" alt="">
+                <div class="col--mobile-12 col--desktop-6 images">
+                    <img class="demo" src="img/demo-screen-1.jpg" alt="">
+                    <img class="phone" src="img/phone.png" alt="">
                 </div>
             </div>
         </header>
@@ -71,23 +72,23 @@
                 <small class="googleplay">google-play-badge.svg</small>
             </div>
             <p>Our app is available on any mobile device! Download now to get started!</p>
-            <a href="play.google.com"><img class="gplay d-sm-block d-lg-inline my-5 mx-auto"
-                    src="../../img/google-play-badge.svg" alt=""></a>
-            <a href="apple.com"><img class="store d-sm-block d-lg-inline my-5 mx-auto"
-                    src="../../img/app-store-badge.svg" alt=""></a>
+            <a href="play.google.com"><img class="gplay"
+                    src="img/google-play-badge.svg" alt=""></a>
+            <a href="apple.com"><img class="store"
+                    src="img/app-store-badge.svg" alt=""></a>
         </section>
         <section id="features" class="">
             <h1 class="">Unlimited Features, Unlimited Fun</h1>
             <p>Check out what you can do with this app theme!</p>
             <hr>
             <div class="">
-                <div class="flex">
-                    <div class="left images">
-                        <img class="demo" src="../../img/demo-screen-1.jpg" alt="">
-                        <img class="phone" src="../../img/phone.png" alt="">
+                <div class="container">                    
+                    <div class="col--mobile-12 col--desktop-2 images">
+                        <img class="demo" src="img/demo-screen-1.jpg" alt="">
+                        <img class="phone" src="img/phone.png" alt="">
                         <div class="place"></div>
-                    </div>
-                    <div class="right">
+                    </div>                    
+                    <div class="col--mobile-12 col--desktop-4">
                         <div class="card">
                             <i class="fa fa-mobile fa-3x"></i>
                             <div class="">
@@ -95,7 +96,7 @@
                                 <p class="">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <i class="fa fa-gift fa-3x"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Free to Use</h5>
@@ -104,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="col--mobile-12 col--desktop-4">
                         <div class="card">
                             <i class="fa fa-camera fa-3x"></i>
                             <div class="">
@@ -124,8 +125,8 @@
             </div>
         </section>
         <section class="stop p-5">
-            <div class="flex-center">
-                <div class="col-sm-7 col-lg-4 offset-lg-2">
+            <div class="container">
+                <div class="col--mobile-7 col--desktop-4">
                     <h1 class="text-white">Stop waiting.</h1>
                     <h1 class="text-white h1 mb-4">Start building.</h1>
                     <div class="">
@@ -138,8 +139,7 @@
         <section id="contact" class="social">
             <h1 class="">We <span class="heart">&#10084</span> new friends!</h1>
             <nav class="">
-                <a href="https://twitter.com" class="" data-toggle="tooltip"
-                    data-placement="top" title="Twitter">
+                <a href="https://twitter.com" class="" data-toggle="tooltip" data-placement="top" title="Twitter">
                     <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
                     <span class="sr-only">Twitter oldal></span>
                 </a>
@@ -148,8 +148,7 @@
                     <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
                     <span class="sr-only">Facebook oldal></span>
                 </a>
-                <a href="https://www.google.com/" class="" data-toggle="tooltip"
-                    data-placement="top" title="Google">
+                <a href="https://www.google.com/" class="" data-toggle="tooltip" data-placement="top" title="Google">
                     <i class="fa fa-google fa-2x" aria-hidden="true"></i>
                     <span class="sr-only">Google oldal></span>
                 </a>
@@ -157,73 +156,29 @@
         </section>
         <footer class="text-center p-5">
             <div class="small">Your Website 2018. All Rights Reserved.</div>
-            <a href="" data-toggle="modal" data-target="#privacy">Privacy</a>
-            <a href="" data-toggle="modal" data-target="#terms">Terms</a>
-            <a href="" data-toggle="modal" data-target="#FAQ">FAQ</a>
+            <a href="#" class="privacy">Privacy</a>
+            <a href="#" class="terms">Terms</a>
+            <a href="#" class="FAQ">FAQ</a>
         </footer>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade d-none" id="FAQ" tabindex="-1" aria-labelledby="faqLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="faqLabel">FAQ</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Bezárás">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Az üzenetet sikeresen elküldtük.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="overlay"></div>
+    <section class="modal animation">
+        <i class="fa fa-times iclose"></i>
+        <header class="modal__header">
+            <h1 class="modal__title"></h1>
+        </header>
+        <section class="modal__main">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+        <footer class="footerModal">
+            <button class="modal__okey">Okey</button>
+        </footer>
+    </section>
 
-    <div class="modal fade d-none" id="privacy" tabindex="-1" aria-labelledby="privacyLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="privacyLabel">Privacy</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Bezárás">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Az üzenetet sikeresen elküldtük.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade d-none" id="terms" tabindex="-1" aria-labelledby="termsLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="termsLabel">Terms</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Bezárás">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Az üzenetet sikeresen elküldtük.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="../../js/scroll.js"></script>
-    <script src="../../js/tooltip.js"></script>
+    <script src="js/scroll.js"></script>
+    <!-- <script src="../../js/tooltip.js"></script> -->
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

@@ -105,16 +105,6 @@ h1 {
   top: 0;
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 992px) {
-  .flex {
-    flex-direction: row;
-  }
-}
-
 .images {
   display: flex;
   justify-content: center;
@@ -148,7 +138,7 @@ h1 {
 }
 
 .newAge {
-  color: #fff;
+  color: #ffffff;
   max-width: 70%;
   padding: 2rem;
   text-align: center;
@@ -159,18 +149,12 @@ h1 {
   }
 }
 
-.margin {
-  margin-top: 2rem;
-  padding-top: 2rem;
-}
-
 .buttonOne {
   border: 1px solid #ffffff;
   border-radius: 99em;
   color: #ffffff;
   font: 0.8rem/1.5 lato, Arial, Helvetica, sans-serif;
   padding: 1rem;
-  margin-left: 1rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -224,6 +208,16 @@ h2 {
   font: 3.8rem/1.5 catamaran, Arial, Helvetica, sans-serif;
 }
 
+.width {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.width2 {
+  margin: 0 auto;
+  width: 50%;
+}
+
 #download,
 #contact {
   background-color: #fdcc52;
@@ -235,7 +229,6 @@ h2 {
 @media only screen and (min-width: 992px) {
   .googleplay {
     display: block;
-    margin-left: 2rem;
     text-align: left;
   }
 }
@@ -324,10 +317,6 @@ h5 {
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  /* @media only screen and (min-width:992px) {
-      align-items:flex-start;
-      justify-content:flex-start;
-  } */
 }
 
 /* Contact */
@@ -419,6 +408,7 @@ footer a:hover {
 }
 
 .footerModal {
+  background-color: none;
   bottom: 2rem;
   position: absolute;
   right: 2rem;

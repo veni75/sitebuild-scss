@@ -26,7 +26,7 @@ header {
 }
 
 h1 {
-  font-family: catamaran, Arial, Helvetica, sans-serif;
+  font: 2.3rem/1.5 catamaran, Arial, Helvetica, sans-serif;
 }
 
 .nav {
@@ -76,17 +76,18 @@ h1 {
   color: #ffffff;
 }
 .nav__hamburger-checkbox {
-  display: block;
+  display: none;
 }
 .nav__hamburger-checkbox:checked + .nav__list {
   display: flex;
 }
 .nav__hamburger-label {
-  background-color: #fff;
-  border: 1px solid gray;
+  background-color: #ffffff;
+  border: 1px solid #808080;
   border-radius: 3px;
   cursor: pointer;
   display: block;
+  padding: 1rem;
 }
 @media screen and (min-width: 992px) {
   .nav__hamburger-label {
@@ -99,9 +100,9 @@ h1 {
 }
 
 .scroll {
+  background-color: #ffffff;
   position: fixed;
   top: 0;
-  background-color: #ffffff;
 }
 
 .flex {
@@ -114,26 +115,12 @@ h1 {
   }
 }
 
-.left {
-  flex: 80%;
-}
-@media screen and (min-width: 992px) {
-  .left {
-    flex: 50%;
-  }
-}
-
-.right {
-  flex: 80%;
-}
-@media screen and (min-width: 992px) {
-  .right {
-    flex: 50%;
-  }
-}
-
 .images {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
 @media only screen and (min-width: 992px) {
@@ -143,9 +130,10 @@ h1 {
 }
 .start {
   color: #fdcc52;
-  margin-left: 1rem;
-  padding: 1rem;
   font-size: 1.3rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  text-decoration: none;
   width: 15rem;
 }
 .start:hover {
@@ -153,21 +141,15 @@ h1 {
 }
 @media only screen and (min-width: 992px) {
   .start {
+    font-size: 1.3rem;
     margin-left: 5rem;
     padding: 1rem;
-    font-size: 1.3rem;
   }
-}
-
-a {
-  color: #d8d8d8;
-}
-a:hover {
-  color: #ffffff;
 }
 
 .newAge {
   color: #fff;
+  max-width: 70%;
   padding: 2rem;
   text-align: center;
 }
@@ -177,52 +159,69 @@ a:hover {
   }
 }
 
+.margin {
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
 .buttonOne {
   border: 1px solid #ffffff;
-  font-family: lato, Arial, Helvetica, sans-serif;
-  padding: 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto;
   border-radius: 99em;
+  color: #ffffff;
+  font: 0.8rem/1.5 lato, Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .buttonOne:hover {
   background-color: #fdcc52;
   border-color: #fdcc52;
+  color: #ffffff;
   transition: all 0.3s;
 }
 .phone {
+  left: 4rem;
   position: absolute;
   top: 2rem;
-  left: 4rem;
   width: 16rem;
 }
 @media only screen and (min-width: 992px) {
   .phone {
-    top: 0rem;
     left: 5px;
+    top: 0rem;
     width: 16rem;
   }
 }
 
 .demo {
+  left: 5rem;
   position: absolute;
   top: 5.4rem;
-  left: 5rem;
-  z-index: 2;
   width: 14.3rem;
+  z-index: 2;
 }
 @media only screen and (min-width: 992px) {
   .demo {
-    top: 3.65rem;
     left: 1.3rem;
+    top: 3.65rem;
   }
 }
 
 /* Download */
 section {
+  padding: 4rem;
   text-align: center;
-  padding: 2rem;
+}
+
+.h2 {
+  font: 3.8rem/0.8 catamaran, Arial, Helvetica, sans-serif;
+  margin-left: 2rem;
+}
+
+h2 {
+  font: 3.8rem/1.5 catamaran, Arial, Helvetica, sans-serif;
 }
 
 #download,
@@ -236,16 +235,16 @@ section {
 @media only screen and (min-width: 992px) {
   .googleplay {
     display: block;
-    text-align: left;
     margin-left: 2rem;
+    text-align: left;
   }
 }
 
 .gplay,
 .store {
-  width: 12rem;
   display: block;
   margin: 1rem auto;
+  width: 12rem;
 }
 @media only screen and (min-width: 992px) {
   .gplay,
@@ -255,8 +254,11 @@ section {
 }
 
 p {
-  font-family: mulish, Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-family: 1rem/1 mulish, Arial, Helvetica, sans-serif;
+}
+
+#features p {
+  color: #808080;
 }
 
 /* Features */
@@ -292,23 +294,23 @@ hr {
 
 .card {
   height: 15rem;
-  width: 18rem;
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
+  width: 18rem;
 }
 
 h5 {
-  font-size: 1.3rem;
+  font: 1.7rem/1.5 catamaran, Arial, Helvetica, sans-serif;
 }
 
 /* Stop */
 .stop {
   background-image: url("../img/bg-cta.jpg");
   background-position: center;
+  color: #ffffff;
   filter: brightness(50%);
-  color: white;
-  font-size: 1.5rem;
   height: 100vh;
+  text-align: left;
 }
 @media only screen and (min-width: 992px) {
   .stop {
@@ -317,11 +319,15 @@ h5 {
 }
 
 .flex-center {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  /* @media only screen and (min-width:992px) {
+      align-items:flex-start;
+      justify-content:flex-start;
+  } */
 }
 
 /* Contact */
@@ -331,6 +337,7 @@ h5 {
 
 .heart {
   color: #dd2533;
+  font-size: 2.5rem;
 }
 
 .fa-facebook {
@@ -362,10 +369,10 @@ h5 {
 
 /* Footer */
 footer {
-  background-color: #000000;
+  background-color: #272727;
   color: #808080;
-  padding: 1rem;
-  font: 0.8rem/1.5 mulish, Arial, Helvetica, sans-serif;
+  font: 0.6rem/1.5 mulish, Arial, Helvetica, sans-serif;
+  padding: 1.3rem;
   text-align: center;
 }
 footer a {
@@ -379,8 +386,8 @@ footer a:hover {
 
 /* MODAL */
 .modal {
-  background-color: white;
-  border: 1px solid gray;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
   display: none;
   left: 0;
   max-width: 100%;
@@ -403,6 +410,7 @@ footer a:hover {
 }
 
 .modal__header {
+  height: 30%;
   padding: 0 2rem;
 }
 
@@ -433,11 +441,11 @@ button {
 
 /*OVERLAY*/
 .overlay {
-  background-color: #7a7979;
+  background-color: #d8d8d8;
   display: none;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   z-index: 2;
   width: 100vw;
   height: 100vh;
@@ -472,6 +480,30 @@ button {
     opacity: 0;
     top: 0;
   }
+}
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+/* Tooltip  */
+.tooltip .tooltiptext {
+  background-color: #000000;
+  border-radius: 6px;
+  bottom: 100%;
+  color: #ffffff;
+  left: 50%;
+  margin-left: -50px;
+  padding: 5px 0;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  width: 100px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

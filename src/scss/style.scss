@@ -28,12 +28,13 @@ html {
 
 /* Header */
 header {
-    background-image: url('../img/bg-pattern.png'), linear-gradient(to right, colors.$gradient-left, colors.$gradient-right);
+    background-image: url('../img/bg-pattern.png'), linear-gradient(to right, colors.$red, colors.$lilac);
     height: 120vh;
 }
 
 h1 {
-    font-family: catamaran, Arial, Helvetica, sans-serif;
+    font: 2.3rem/1.5 catamaran, Arial, Helvetica, sans-serif;
+    
 }
 
 
@@ -75,7 +76,7 @@ h1 {
     }
 
     &__link {
-        color: colors.$menu-link;
+        color: colors.$light-gray;
         display: block;
         font-size: 1rem;
         line-height: 1rem;
@@ -83,14 +84,14 @@ h1 {
         text-decoration: none;
 
         &:hover {
-            color: colors.$hover-color;
+            color: colors.$white;
+
         }
     }
 
     &__hamburger {
         &-checkbox {
-            display: block;
-
+            display: none;
 
             &:checked+.nav__list {
                 display: flex;
@@ -98,13 +99,12 @@ h1 {
         }
 
         &-label {
-            background-color: #fff;
-            border: 1px solid gray;
+            background-color: colors.$white;
+            border: 1px solid colors.$footer-color;
             border-radius: 3px;
             cursor: pointer;
             display: block;
-
-
+            padding: 1rem;
 
             @media screen and (min-width: 992px) {
                 display: none;
@@ -113,15 +113,14 @@ h1 {
     }
 }
 
-
 .d-none {
     display: none;
 }
 
 .scroll {
+    background-color: colors.$white;
     position: fixed;
     top: 0;
-    background-color: colors.$hover-color;
 }
 
 .flex {
@@ -133,25 +132,12 @@ h1 {
     }
 }
 
-.left {
-    flex: 80%;
-
-    @media screen and (min-width: 992px) {
-        flex: 50%;
-    }
-}
-
-.right {
-    flex: 80%;
-
-    @media screen and (min-width: 992px) {
-        flex: 50%;
-    }
-}
-
 .images {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     position: relative;
-
+    text-align: center;
 }
 
 @media only screen and (min-width:992px) {
@@ -161,55 +147,55 @@ h1 {
 }
 
 .start {
-    color: colors.$background;
-    margin-left: 1rem;
-    padding: 1rem;
+    color: colors.$yellow;
     font-size: 1.3rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    text-decoration: none;
     width: 15rem;
 
     &:hover {
-        color: colors.$hover-color;
+        color: colors.$white;
     }
 
     @media only screen and (min-width: 992px) {
+        font-size: 1.3rem;
         margin-left: 5rem;
         padding: 1rem;
-        font-size: 1.3rem;
-    }
-}
-
-a {
-    color: colors.$menu-link;
-
-    &:hover {
-        color: colors.$hover-color;
     }
 }
 
 .newAge {
     color: #fff;
+    max-width: 70%;
     padding: 2rem;
     text-align: center;
 
     @media only screen and (min-width: 992px) {
-
         text-align: left;
     }
 }
 
+.margin {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
 .buttonOne {
-    border: 1px solid colors.$hover-color;
-    font-family: lato, Arial, Helvetica, sans-serif;
-    padding: 1rem;
-    // background-color: colors.$hover-color;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto;
+    border: 1px solid colors.$white;
     border-radius: 99em;
+    color: colors.$white;
+    font: 0.8rem/1.5 lato, Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 
     &:hover {
-        background-color: colors.$background;
-        border-color: colors.$background;
+        background-color: colors.$yellow;
+        border-color: colors.$yellow;
+        color: colors.$white;
         transition: all .3s;
     }
 
@@ -217,41 +203,50 @@ a {
 }
 
 .phone {
+    left: 4rem;
     position: absolute;
     top: 2rem;
-    left: 4rem;
     width: 16rem;
 
     @media only screen and (min-width: 992px) {
-        top: 0rem;
         left: 5px;
+        top: 0rem;
         width: 16rem;
     }
 }
 
 .demo {
+    left: 5rem;
     position: absolute;
     top: 5.4rem;
-    left: 5rem;
-    z-index: 2;
     width: 14.3rem;
+    z-index: 2;
 
     @media only screen and (min-width: 992px) {
-        top: 3.65rem;
         left: 1.3rem;
+        top: 3.65rem;
     }
 }
 
 /* Download */
 
 section {
+    padding: 4rem;
     text-align: center;
-    padding: 2rem;
+}
+.h2 {
+    font: 3.8rem/0.8 catamaran, Arial, Helvetica, sans-serif; 
+    margin-left: 2rem;      
+}
+
+h2 {
+    font: 3.8rem/1.5 catamaran, Arial, Helvetica, sans-serif; 
+    
 }
 
 #download,
 #contact {
-    background-color: colors.$background;
+    background-color: colors.$yellow;
 }
 
 .googleplay {
@@ -259,16 +254,16 @@ section {
 
     @media only screen and (min-width: 992px) {
         display: block;
-        text-align: left;
         margin-left: 2rem;
+        text-align: left;
     }
 }
 
 .gplay,
 .store {
-    width: 12rem;
     display: block;
     margin: 1rem auto;
+    width: 12rem;
 
     @media only screen and (min-width: 992px) {
         display: inline;
@@ -276,9 +271,12 @@ section {
     }
 }
 
-p {
-    font-family: mulish, Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+p{
+    font-family: 1rem/1 mulish, Arial, Helvetica, sans-serif;
+}
+
+#features p {
+    color:colors.$footer-color;    
 }
 
 /* Features */
@@ -314,23 +312,23 @@ hr {
 
 .card {
     height: 15rem;
-    width: 18rem;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
+    width: 18rem;
 }
 
 h5 {
-    font-size: 1.3rem;
+    font: 1.7rem/1.5 catamaran, Arial, Helvetica, sans-serif;
 }
 
 /* Stop */
 .stop {
     background-image: url('../img/bg-cta.jpg');
     background-position: center;
+    color: colors.$white;    
     filter: brightness(50%);
-    color: white;
-    font-size: 1.5rem;
     height: 100vh;
+    text-align: left;
 
     @media only screen and (min-width:992px) {
         height: 75vh;
@@ -338,12 +336,18 @@ h5 {
 }
 
 .flex-center {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+    /* @media only screen and (min-width:992px) {
+        align-items:flex-start;
+        justify-content:flex-start;
+    } */
 }
+
 
 /* Contact */
 .social {
@@ -351,7 +355,8 @@ h5 {
 }
 
 .heart {
-    color: colors.$gradient-left;
+    color: colors.$red;
+    font-size: 2.5rem;
 }
 
 .fa-facebook {
@@ -371,8 +376,8 @@ h5 {
 footer {
     background-color: colors.$footer-background;
     color: colors.$footer-color;
-    padding: 1rem;
-    font: 0.8rem/1.5 mulish, Arial, Helvetica, sans-serif;
+    font: 0.6rem/1.5 mulish, Arial, Helvetica, sans-serif;
+    padding: 1.3rem;
     text-align: center;
 
     a {
@@ -381,16 +386,15 @@ footer {
         text-decoration: none;
 
         &:hover {
-            color: colors.$background;
+            color: colors.$yellow;
         }
     }
 }
 
-
 /* MODAL */
 .modal {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(128, 128, 128);
+    background-color: colors.$white;
+    border: 1px solid colors.$light-gray;
     display: none;
     left: 0;
     max-width: 100%;
@@ -413,7 +417,8 @@ footer {
     top: 2rem;
 }
 
-.modal__header {
+.modal__header {    
+    height: 30%;
     padding: 0 2rem;
 }
 
@@ -422,6 +427,7 @@ footer {
 }
 
 .footerModal {
+    background-color: none;
     bottom: 2rem;
     position: absolute;
     right: 2rem;
@@ -433,9 +439,9 @@ button {
 }
 
 .modal__okey {
-    background-color: #56e456;
-    border: 1px solid #56e456;
-    color: #ffffff;
+    background-color: colors.$modalButton;
+    border: 1px solid colors.$modalButton;
+    color: colors.$white;
 }
 
 .modal__button {
@@ -444,11 +450,11 @@ button {
 
 /*OVERLAY*/
 .overlay {
-    background-color: #7a7979;
+    background-color: colors.$light-gray;
     display: none;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     z-index: 2;
     width: 100vw;
     height: 100vh;
@@ -486,4 +492,29 @@ button {
         opacity: 0;
         top: 0;
     }
+}
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+}
+
+/* Tooltip  */
+.tooltip .tooltiptext {
+    background-color: colors.$black;
+    border-radius: 6px;
+    bottom: 100%;
+    color: colors.$white;
+    left: 50%;
+    margin-left: -50px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 100px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

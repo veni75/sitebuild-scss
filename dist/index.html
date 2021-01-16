@@ -13,7 +13,7 @@
 <body>
     <div class="">
         <header class="">
-            <nav class="scroll d-none">
+            <nav class="nav scroll d-none">
                 <a class="start" href="index.html">Start bootstrap</a>
 
                 <div class="nav__container">
@@ -53,11 +53,11 @@
             </nav>
 
             <div class="container">
-                <div class="col--mobile-12 col--desktop-6">
+                <div class="col--mobile-12 col--desktop-6 flex-center">
                     <h1 class="newAge">New Age is an app
                         landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
                     <div class="">
-                        <a class="buttonOne btn-lg ml-lg-5" href="">Start now for free!</a>
+                        <a class="buttonOne" href="">Start now for free!</a>
                     </div>
                 </div>
                 <div class="col--mobile-12 col--desktop-6 images">
@@ -67,27 +67,25 @@
             </div>
         </header>
         <section id="download" class="">
-            <h1 class="">Discover what all the buzz is about!</h1>
+            <h2 class="">Discover what all the buzz is about!</h2>
             <div class="">
                 <small class="googleplay">google-play-badge.svg</small>
             </div>
             <p>Our app is available on any mobile device! Download now to get started!</p>
-            <a href="play.google.com"><img class="gplay"
-                    src="img/google-play-badge.svg" alt=""></a>
-            <a href="apple.com"><img class="store"
-                    src="img/app-store-badge.svg" alt=""></a>
+            <a href="https://play.google.com"><img class="gplay" src="img/google-play-badge.svg" alt=""></a>
+            <a href="https://apple.com"><img class="store" src="img/app-store-badge.svg" alt=""></a>
         </section>
         <section id="features" class="">
             <h1 class="">Unlimited Features, Unlimited Fun</h1>
             <p>Check out what you can do with this app theme!</p>
             <hr>
             <div class="">
-                <div class="container">                    
-                    <div class="col--mobile-12 col--desktop-2 images">
+                <div class="container">
+                    <div class="col--mobile-12 col--desktop-4 images">
                         <img class="demo" src="img/demo-screen-1.jpg" alt="">
                         <img class="phone" src="img/phone.png" alt="">
                         <div class="place"></div>
-                    </div>                    
+                    </div>
                     <div class="col--mobile-12 col--desktop-4">
                         <div class="card">
                             <i class="fa fa-mobile fa-3x"></i>
@@ -124,14 +122,13 @@
                 </div>
             </div>
         </section>
-        <section class="stop p-5">
-            <div class="container">
-                <div class="col--mobile-7 col--desktop-4">
-                    <h1 class="text-white">Stop waiting.</h1>
-                    <h1 class="text-white h1 mb-4">Start building.</h1>
+        <section class="stop">
+            <div class="flex-center">
+                <div class="col--mobile-12">
+                    <h2 class="h2">Stop waiting.</h2>
+                    <h2 class="h2">Start building.</h2>
                     <div class="">
-                        <a class="buttonOne rounded-pill btn-lg text-white text-uppercase text-center" href="">Let's get
-                            started</a>
+                        <a class="buttonOne" href="">Let's get started</a>
                     </div>
                 </div>
             </div>
@@ -139,22 +136,21 @@
         <section id="contact" class="social">
             <h1 class="">We <span class="heart">&#10084</span> new friends!</h1>
             <nav class="">
-                <a href="https://twitter.com" class="" data-toggle="tooltip" data-placement="top" title="Twitter">
-                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                    <span class="sr-only">Twitter oldal></span>
+                <a href="https://twitter.com" class="tooltip">
+                    <span class="tooltiptext">Twitter</span>
+                    <i class="fa fa-twitter fa-2x"></i>                    
                 </a>
-                <a href="https://www.facebook.com/" class="text-white mr-2" data-toggle="tooltip" data-placement="top"
-                    title="Facebook">
-                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                    <span class="sr-only">Facebook oldal></span>
+                <a href="https://www.facebook.com/" class="tooltip">
+                    <span class="tooltiptext">Facebook</span>
+                    <i class="fa fa-facebook fa-2x"></i>                    
                 </a>
-                <a href="https://www.google.com/" class="" data-toggle="tooltip" data-placement="top" title="Google">
-                    <i class="fa fa-google fa-2x" aria-hidden="true"></i>
-                    <span class="sr-only">Google oldal></span>
+                <a href="https://www.google.com/" class="tooltip">
+                    <span class="tooltiptext">Google</span>                    
+                    <i class="fa fa-google fa-2x"></i>                   
                 </a>
             </nav>
         </section>
-        <footer class="text-center p-5">
+        <footer class="">
             <div class="small">Your Website 2018. All Rights Reserved.</div>
             <a href="#" class="privacy">Privacy</a>
             <a href="#" class="terms">Terms</a>

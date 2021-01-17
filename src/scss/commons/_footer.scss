@@ -1,0 +1,19 @@
+@use "../variables/colors";
+
+footer {
+    background-color: colors.$footer-background;
+    color: colors.$footer-color;
+    font: 0.6rem/1.5 mulish, Arial, Helvetica, sans-serif;
+    padding: 1.3rem;
+    text-align: center;
+
+    a {
+        color: colors.$footer-color;
+        padding: 0.5rem;
+        text-decoration: none;
+
+        &:hover {
+            color: colors.$yellow;
+        }
+    }
+}

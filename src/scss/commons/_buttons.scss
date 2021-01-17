@@ -1,0 +1,33 @@
+@use "../variables/colors";
+
+/* Header */
+.buttonOne {
+    border: 1px solid colors.$white;
+    border-radius: 99em;
+    color: colors.$white;
+    font: 0.8rem/1.5 lato, Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: colors.$yellow;
+        border-color: colors.$yellow;
+        color: colors.$white;
+        transition: all .3s;
+    }
+
+    @media only screen and (min-width: 992px) {}
+}
+
+.gplay,
+.store {
+    display: block;
+    margin: 1rem auto;
+    width: 12rem;
+
+    @media only screen and (min-width: 992px) {
+        display: inline;
+    }
+}

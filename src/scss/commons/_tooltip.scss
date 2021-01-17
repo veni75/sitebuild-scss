@@ -1,0 +1,25 @@
+@use "../variables/colors";
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    background-color: colors.$black;
+    border-radius: 6px;
+    bottom: 100%;
+    color: colors.$white;
+    left: 50%;
+    margin-left: -50px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 100px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
